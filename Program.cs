@@ -44,9 +44,7 @@ namespace Homework10April
         /// <returns>true/false</returns>
         static bool CheckIsDigit(string tc)
         {
-            long number;
-            bool check;
-            check = long.TryParse(tc, out number);
+            bool check = long.TryParse(tc, out long number);
             if (check)
             {
                 return true;
