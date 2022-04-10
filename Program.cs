@@ -23,6 +23,11 @@ namespace Homework10April
             }
         }
 
+        /// <summary>
+        /// kullanıcının boş girmediğini kontrol ediyor.
+        /// </summary>
+        /// <param name="tc"></param>
+        /// <returns>true/false</returns>
         static bool CheckEmpty(string tc)
         {
             if (!string.IsNullOrEmpty(tc))
@@ -33,6 +38,11 @@ namespace Homework10April
             return false;
         }
 
+        /// <summary>
+        /// Kullanıcı rakamlar girdiği kontrol ediyor.
+        /// </summary>
+        /// <param name="tc"></param>
+        /// <returns>true/false</returns>
         static bool CheckIsDigit(string tc)
         {
             long number;
@@ -45,6 +55,12 @@ namespace Homework10April
             Console.WriteLine("Doğru kimilik numarası yaziniz! Kimilik numarasına alfabe dahel değildir.");
             return false;
         }
+
+        /// <summary>
+        /// Kullanıcı 11 haneli ve 0'den başlamadan bir numarası yazdığı kontrol ediyor.
+        /// </summary>
+        /// <param name="tc"></param>
+        /// <returns>true/false</returns>
         static bool CheckIdCard(string tc)
         {
             if (tc.Length == 11)
