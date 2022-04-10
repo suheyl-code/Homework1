@@ -10,8 +10,8 @@ namespace Homework10April
     {
         static void Main(string[] args)
         {
-            Console.Write("TC Numara Girin: ");
-            string tcString = Console.ReadLine();
+            string tcString = Prompt("TC Numara Girin: ");
+            
             if (CheckEmpty(tcString) && CheckIsDigit(tcString) && CheckIdCard(tcString))
             {
                 Console.WriteLine("Doğru TC Numarası.");
@@ -20,6 +20,17 @@ namespace Homework10April
             {
                 Console.WriteLine("Hata var. Tekrar deneyiniz!");
             }
+        }
+
+        /// <summary>
+        /// kullanıcıya bir mesaj gönderir ve kullanıcı girişi geri döner. 
+        /// </summary>
+        /// <param name="message"></param>
+        /// <returns>string</returns>
+        static string Prompt(string message)
+        {
+            Console.Write(message);
+            return Console.ReadLine();
         }
 
         /// <summary>
