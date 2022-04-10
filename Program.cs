@@ -14,7 +14,6 @@ namespace Homework10April
             string tcString = Console.ReadLine();
             if (CheckEmpty(tcString) && CheckIsDigit(tcString) && CheckIdCard(tcString))
             {
-
                 Console.WriteLine("Doğru TC Numarası.");
             }
             else
