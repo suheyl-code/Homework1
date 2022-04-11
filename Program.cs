@@ -12,7 +12,7 @@ namespace Homework10April
         {
             string tcString = Prompt("TC Numara Girin: ");
             
-            if (CheckEmpty(tcString) && CheckIsDigit(tcString) && CheckIdCard(tcString))
+            if (CheckNotEmpty(tcString) && CheckIsDigit(tcString) && CheckIdCard(tcString))
             {
                 Console.WriteLine("Doğru TC Numarası.");
             }
@@ -38,7 +38,7 @@ namespace Homework10April
         /// </summary>
         /// <param name="tc"></param>
         /// <returns>true/false</returns>
-        static bool CheckEmpty(string tc)
+        static bool CheckNotEmpty(string tc)
         {
             if (!string.IsNullOrEmpty(tc))
             {
